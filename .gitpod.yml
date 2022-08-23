@@ -4,6 +4,8 @@
 
 tasks:
   - init: yarn install && yarn run build
+    env:
+      API_HOST: "http://example.com"
     command: yarn start:dev
 ports:
   - port: 3000
